@@ -6,7 +6,7 @@
 <link rel="manifest" href="manifest.json">
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.38.4/dist/umd/supabase.min.js"></script>
 <style>
-:root{--bg-color:#0d0d0d;--gold:#d4af37;--silver:#a0a0a0;--text-main:#ffffff;--text-muted:#a0a0a0;--card-bg:#141414;--border-color:rgba(212,175,55,0.25)}*{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,sans-serif}body{background-color:var(--bg-color);color:var(--text-main);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:20px 20px 35px 20px;position:relative}.vip-top-pill{width:100%;max-width:440px;background:rgba(255,255,255,0.02);border:1px solid var(--border-color);border-radius:30px;padding:10px 16px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;transition:all .2s ease}.vip-top-pill:hover{border-color:var(--gold)}.vip-pill-left{display:flex;align-items:center;gap:8px;font-size:10px;font-weight:700;letter-spacing:1.2px;color:var(--text-muted);text-transform:uppercase}.vip-star{color:var(--gold);font-size:11px}.vip-pill-right{font-size:10px;font-weight:800;letter-spacing:1px;color:var(--gold);text-transform:uppercase}@media (max-width:390px){.vip-top-pill{flex-direction:column;justify-content:center;gap:6px;padding:12px 16px;text-align:center}}.header-container{width:100%;max-width:440px;display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:35px}.top-right-group{display:flex;flex-direction:column;align-items:flex-end;gap:10px}.live-badge{white-space:nowrap;display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);padding:5px 10px;border-radius:20px;font-size:9px;font-weight:600;letter-spacing:1px;color:var(--text-muted);text-transform:uppercase}.live-dot{width:5px;height:5px;background-color:#2ecc71;border-radius:50%;box-shadow:0 0 6px #2ecc71;transition:all .3s ease}.controls-row{display:flex;gap:8px}.toggle-capsule{display:flex;align-items:center;background:rgba(255,255,255,0.03);padding:4px 8px;border-radius:12px;border:1px solid rgba(255,255,255,0.06)}.toggle-capsule button{background:none;border:none;color:var(--text-muted);cursor:pointer;font-size:10px;font-weight:600;padding:2px 3px;transition:color .2s ease}.toggle-capsule button.active{color:var(--gold)}.toggle-capsule span{color:#444;margin:0 3px;font-size:10px}.main-content{width:100%;max-width:440px;display:flex;flex-direction:column;align-items:center;flex-grow:1}.hero-section{width:100%;text-align:center;margin-bottom:45px}.hero-title{font-size:26px;font-weight:400;line-height:1.35;letter-spacing:-.5px;margin-bottom:12px;color:var(--text-main)}.hero-title-gold{font-size:20px;font-weight:400;line-height:1.35;letter-spacing:-.5px;color:var(--gold);font-style:italic}.inline-pricing{font-size:12px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:2px;margin-bottom:15px;text-align:center}.inline-pricing span{color:var(--gold);font-size:14px;font-weight:700}.cta-container{display:flex;flex-direction:column;align-items:center;width:100%;gap:30px;margin-bottom:30px}@keyframes breathing{0%{transform:scale(1);box-shadow:inset 3px 3px 10px rgba(255,255,255,0.5),inset -5px -5px 15px rgba(0,0,0,0.3),0 0 20px rgba(212,175,55,0.2)}50%{transform:scale(1.03);box-shadow:inset 3px 3px 10px rgba(255,255,255,0.6),inset -5px -5px 15px rgba(0,0,0,0.3),0 0 35px rgba(212,175,55,0.5)}100%{transform:scale(1);box-shadow:inset 3px 3px 10px rgba(255,255,255,0.5),inset -5px -5px 15px rgba(0,0,0,0.3),0 0 20px rgba(212,175,55,0.2)}}.ready-circle-btn{width:170px;height:170px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ffe382 0%,#d4af37 45%,#947a26 100%);box-shadow:inset 3px 3px 10px rgba(255,255,255,0.5),inset -5px -5px 15px rgba(0,0,0,0.3),0 0 20px rgba(212,175,55,0.2);color:#050505;display:flex;flex-direction:column;justify-content:center;align-items:center;border:none;cursor:pointer;animation:breathing 3s infinite ease-in-out;margin:0 auto;text-align:center;transition:transform .1s ease}.ready-circle-btn:active{transform:scale(.95)}.ready-line-1{font-size:20px;font-weight:800;letter-spacing:2px;line-height:1.1}.ready-line-2{font-size:19px;font-weight:800;letter-spacing:1.5px;line-height:1.1}.cta-footer-note{font-size:12px;color:var(--text-muted);letter-spacing:.5px;text-align:center;margin-top:10px;max-width:320px;line-height:1.4}.ready-later-btn{background:transparent;border:1px solid var(--border-color);color:var(--gold);padding:12px 24px;border-radius:30px;font-size:11px;font-weight:600;letter-spacing:1.5px;cursor:pointer;text-transform:uppercase;transition:all .2s ease;display:flex;align-items:center;gap:8px}.ready-later-btn:hover{border-color:var(--gold)}.active-hours-note{font-size:10px;color:#555;letter-spacing:1px;text-transform:uppercase;text-align:center;margin-top:10px}.site-footer{width:100%;text-align:center;padding-top:25px;margin-top:auto;border-top:1px solid rgba(255,255,255,0.05);font-size:11px;color:#777;letter-spacing:.5px;line-height:1.8}.site-footer a{color:var(--text-muted);text-decoration:none;margin:0 6px;transition:color .2s;font-weight:600;cursor:pointer}.site-footer a:hover{color:var(--gold);text-decoration:underline}.modal-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);backdrop-filter:blur(6px);display:none;justify-content:center;align-items:center;z-index:100;padding:20px;overflow-y:auto}.modal-card{background:var(--card-bg);border:1px solid var(--border-color);border-radius:20px;padding:28px 24px;width:100%;max-width:380px;text-align:center;box-shadow:0 15px 35px rgba(0,0,0,0.6);margin:auto}.modal-card h3{color:var(--text-main);font-size:22px;margin-bottom:10px;font-weight:600}.modal-card p{color:var(--text-muted);font-size:13px;margin-bottom:20px;line-height:1.4;padding:0 10px}.modal-input{width:100%;background-color:#141414!important;color:#fff!important;border:1px solid var(--border-color);padding:14px;border-radius:12px;font-size:15px;text-align:center;letter-spacing:1px;margin-bottom:12px;outline:none;appearance:none;transition:border-color .2s}.modal-input:-webkit-autofill{-webkit-text-fill-color:#fff!important;-webkit-box-shadow:0 0 0px 1000px #141414 inset!important;transition:background-color 5000s ease-in-out 0s}.modal-input:focus{border-color:var(--gold)}select.modal-input{text-align-last:center}select.modal-input option{background:#141414;color:#fff}select.modal-input option.gold-tier{color:var(--gold);font-weight:bold}select.modal-input option.silver-tier{color:var(--silver);font-weight:bold}select.modal-input option.separator{color:rgba(255,255,255,0.2)}.modal-capsule-btn{background:var(--gold);color:#0d0d0d;border:none;padding:14px 24px;border-radius:30px;font-size:12px;font-weight:800;cursor:pointer;margin:10px auto 0 auto;width:100%;text-transform:uppercase;transition:all .2s}.modal-capsule-btn-secondary{background:transparent;color:var(--text-main);border:1px solid var(--border-color);padding:12px 20px;border-radius:30px;font-size:11px;font-weight:700;cursor:pointer;margin:8px auto 0 auto;width:100%;text-transform:uppercase;letter-spacing:1px}.modal-capsule-btn-secondary:hover{border-color:var(--gold)}#codeModal .modal-circle-btn{width:95px;height:95px;border-radius:50%;background:var(--gold)!important;color:#0d0d0d!important;border:none;font-weight:800;font-size:10px;cursor:pointer;margin:10px auto 16px auto;display:flex;justify-content:center;align-items:center;text-align:center;padding:5px}.modal-close{background:none;border:none;color:var(--text-muted);font-size:12px;cursor:pointer;margin-top:15px;display:inline-block}.reset-user-link{display:none;background:none;border:none;color:var(--gold);font-size:10px;font-weight:700;text-transform:uppercase;cursor:pointer;text-decoration:underline;margin:15px auto 5px auto;width:100%}.perks-mini-box{background:rgba(255,255,255,0.02);border:1px solid var(--border-color);border-radius:12px;padding:14px;margin-bottom:16px;text-align:left;font-size:12px;color:var(--text-muted);line-height:1.5}.detailed-steps{text-align:left;margin:24px 0}.detailed-step-row{margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,0.05)}.detailed-step-row:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}.step-number{color:var(--gold);font-size:14px;font-weight:800;margin-bottom:4px;text-transform:uppercase;letter-spacing:1px}.step-desc{color:var(--text-muted);font-size:13px;line-height:1.4}#finalSuccessView{display:none;width:100%;max-width:440px;text-align:center}.success-header-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:2px;color:var(--gold);background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.3);padding:6px 14px;border-radius:20px;text-transform:uppercase;margin-bottom:20px}.success-main-title{font-size:32px;font-weight:700;color:var(--text-main);margin-bottom:8px}.success-sub-title{font-size:15px;color:var(--text-muted);margin-bottom:30px}.success-receipt-card{background:var(--card-bg);border:1px solid var(--border-color);border-radius:24px;padding:28px 24px;text-align:left;position:relative;overflow:hidden;box-shadow:0 15px 40px rgba(0,0,0,0.6)}.success-receipt-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--gold)}.receipt-top-row{display:flex;justify-content:space-between;margin-bottom:20px}.receipt-title{font-size:20px;font-weight:600;margin-bottom:4px}.receipt-updates-tag{font-size:11px;font-weight:700;color:var(--gold);transition:color .3s}.receipt-price-box{text-align:right}.receipt-price{font-size:22px;font-weight:700;color:var(--gold);margin-bottom:4px}.receipt-price-label{font-size:10px;color:var(--text-muted);text-transform:uppercase}.receipt-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}.receipt-grid-box{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:14px;padding:16px;text-align:center}.grid-box-val{font-size:16px;font-weight:700;margin-bottom:4px}.grid-box-lbl{font-size:10px;color:var(--text-muted);text-transform:uppercase}.receipt-footer-desc{font-size:12px;color:var(--text-muted);line-height:1.5;border-top:1px solid rgba(255,255,255,0.06);padding-top:16px;text-align:center}.receipt-action-btn{background:var(--gold);color:#0d0d0d;padding:14px 24px;border-radius:30px;font-size:12px;font-weight:800;display:flex;justify-content:center;gap:8px;margin-top:20px;text-decoration:none}
+:root{--bg-color:#0d0d0d;--gold:#d4af37;--silver:#a0a0a0;--text-main:#ffffff;--text-muted:#a0a0a0;--card-bg:#141414;--border-color:rgba(212,175,55,0.25)}*{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,sans-serif}body{background-color:var(--bg-color);color:var(--text-main);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:20px 20px 35px 20px;position:relative}.vip-top-pill{width:100%;max-width:440px;background:rgba(255,255,255,0.02);border:1px solid var(--border-color);border-radius:30px;padding:10px 16px;margin-bottom:24px;display:flex;justify-content:space-between;align-items:center;cursor:pointer;transition:all .2s ease}.vip-top-pill:hover{border-color:var(--gold)}.vip-pill-left{display:flex;align-items:center;gap:8px;font-size:10px;font-weight:700;letter-spacing:1.2px;color:var(--text-muted);text-transform:uppercase}.vip-star{color:var(--gold);font-size:11px}.vip-pill-right{font-size:10px;font-weight:800;letter-spacing:1px;color:var(--gold);text-transform:uppercase}@media (max-width:390px){.vip-top-pill{flex-direction:column;justify-content:center;gap:6px;padding:12px 16px;text-align:center}}.header-container{width:100%;max-width:440px;display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:15px}.top-right-group{display:flex;flex-direction:column;align-items:flex-end;gap:10px}.live-dot{width:6px;height:6px;background-color:#2ecc71;border-radius:50%;box-shadow:0 0 6px #2ecc71;transition:all .3s ease}.live-dot.offline{background-color:#7f8c8d;box-shadow:none}.controls-row{display:flex;gap:8px}.toggle-capsule{display:flex;align-items:center;background:rgba(255,255,255,0.03);padding:4px 8px;border-radius:12px;border:1px solid rgba(255,255,255,0.06)}.toggle-capsule button{background:none;border:none;color:var(--text-muted);cursor:pointer;font-size:10px;font-weight:600;padding:2px 3px;transition:color .2s ease}.toggle-capsule button.active{color:var(--gold)}.toggle-capsule span{color:#444;margin:0 3px;font-size:10px}.main-content{width:100%;max-width:440px;display:flex;flex-direction:column;align-items:center;flex-grow:1}.hero-section{width:100%;text-align:center;margin-bottom:30px}.hero-title{font-size:26px;font-weight:800;letter-spacing:1px;line-height:1.2;margin-bottom:12px;color:var(--text-main);text-transform:uppercase}.hero-title-gold{font-size:20px;font-weight:400;line-height:1.35;letter-spacing:-.5px;color:var(--gold);font-style:italic}.inline-pricing{font-size:12px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:2px;margin-bottom:15px;text-align:center}.inline-pricing span{color:var(--gold);font-size:14px;font-weight:700}.cta-container{display:flex;flex-direction:column;align-items:center;width:100%;gap:30px;margin-bottom:30px}@keyframes breathing{0%{transform:scale(1);box-shadow:inset 3px 3px 10px rgba(255,255,255,0.5),inset -5px -5px 15px rgba(0,0,0,0.3),0 0 20px rgba(212,175,55,0.2)}50%{transform:scale(1.03);box-shadow:inset 3px 3px 10px rgba(255,255,255,0.6),inset -5px -5px 15px rgba(0,0,0,0.3),0 0 35px rgba(212,175,55,0.5)}100%{transform:scale(1);box-shadow:inset 3px 3px 10px rgba(255,255,255,0.5),inset -5px -5px 15px rgba(0,0,0,0.3),0 0 20px rgba(212,175,55,0.2)}}.ready-circle-btn{width:170px;height:170px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ffe382 0%,#d4af37 45%,#947a26 100%);box-shadow:inset 3px 3px 10px rgba(255,255,255,0.5),inset -5px -5px 15px rgba(0,0,0,0.3),0 0 20px rgba(212,175,55,0.2);color:#050505;display:flex;flex-direction:column;justify-content:center;align-items:center;border:none;cursor:pointer;animation:breathing 3s infinite ease-in-out;margin:0 auto;text-align:center;transition:transform .1s ease}.ready-circle-btn:active{transform:scale(.95)}.ready-line-1{font-size:20px;font-weight:800;letter-spacing:2px;line-height:1.1}.ready-line-2{font-size:19px;font-weight:800;letter-spacing:1.5px;line-height:1.1}.ready-later-btn{background:transparent;border:1px solid var(--border-color);color:var(--gold);padding:12px 24px;border-radius:30px;font-size:11px;font-weight:600;letter-spacing:1.5px;cursor:pointer;text-transform:uppercase;transition:all .2s ease;display:flex;align-items:center;gap:8px}.ready-later-btn:hover{border-color:var(--gold)}.cta-footer-note{font-size:12px;color:var(--text-muted);letter-spacing:.5px;text-align:center;margin-top:10px;max-width:320px;line-height:1.4}.active-hours-note{font-size:10px;color:#555;letter-spacing:1px;text-transform:uppercase;text-align:center;margin-top:10px}.site-footer{width:100%;text-align:center;padding-top:25px;margin-top:auto;border-top:1px solid rgba(255,255,255,0.05);font-size:11px;color:#777;letter-spacing:.5px;line-height:1.8}.site-footer a{color:var(--text-muted);text-decoration:none;margin:0 6px;transition:color .2s;font-weight:600;cursor:pointer}.site-footer a:hover{color:var(--gold);text-decoration:underline}.modal-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);backdrop-filter:blur(6px);display:none;justify-content:center;align-items:center;z-index:100;padding:20px;overflow-y:auto}.modal-card{background:var(--card-bg);border:1px solid var(--border-color);border-radius:20px;padding:28px 24px;width:100%;max-width:380px;text-align:center;box-shadow:0 15px 35px rgba(0,0,0,0.6);margin:auto}.modal-card h3{color:var(--text-main);font-size:22px;margin-bottom:10px;font-weight:600}.modal-card p{color:var(--text-muted);font-size:13px;margin-bottom:20px;line-height:1.4;padding:0 10px}.modal-input{width:100%;background-color:#141414!important;color:#fff!important;border:1px solid var(--border-color);padding:14px;border-radius:12px;font-size:13px;text-align:center;letter-spacing:1px;margin-bottom:12px;outline:none;appearance:none;transition:border-color .2s;font-weight:600}.modal-input:-webkit-autofill{-webkit-text-fill-color:#fff!important;-webkit-box-shadow:0 0 0px 1000px #141414 inset!important;transition:background-color 5000s ease-in-out 0s}.modal-input:focus{border-color:var(--gold)}select.modal-input{text-align-last:center}select.modal-input option{background:#141414;color:#fff}select.modal-input option.gold-tier{color:var(--gold);font-weight:bold}select.modal-input option.silver-tier{color:var(--silver);font-weight:bold}select.modal-input option.separator{color:rgba(255,255,255,0.2)}.modal-capsule-btn{background:var(--gold);color:#0d0d0d;border:none;padding:14px 24px;border-radius:30px;font-size:12px;font-weight:800;cursor:pointer;margin:10px auto 0 auto;width:100%;text-transform:uppercase;transition:all .2s}.modal-capsule-btn-secondary{background:transparent;color:var(--text-main);border:1px solid var(--border-color);padding:12px 20px;border-radius:30px;font-size:11px;font-weight:700;cursor:pointer;margin:8px auto 0 auto;width:100%;text-transform:uppercase;letter-spacing:1px}.modal-capsule-btn-secondary:hover{border-color:var(--gold)}#codeModal .modal-circle-btn{width:95px;height:95px;border-radius:50%;background:var(--gold)!important;color:#0d0d0d!important;border:none;font-weight:800;font-size:10px;cursor:pointer;margin:10px auto 16px auto;display:flex;justify-content:center;align-items:center;text-align:center;padding:5px}.modal-close{background:none;border:none;color:var(--text-muted);font-size:12px;cursor:pointer;margin-top:15px;display:inline-block}.reset-user-link{display:none;background:none;border:none;color:var(--gold);font-size:10px;font-weight:700;text-transform:uppercase;cursor:pointer;text-decoration:underline;margin:15px auto 5px auto;width:100%}.perks-mini-box{background:rgba(255,255,255,0.02);border:1px solid var(--border-color);border-radius:12px;padding:14px;margin-bottom:16px;text-align:left;font-size:12px;color:var(--text-muted);line-height:1.5}.detailed-steps{text-align:left;margin:24px 0}.detailed-step-row{margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,0.05)}.detailed-step-row:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}.step-number{color:var(--gold);font-size:14px;font-weight:800;margin-bottom:4px;text-transform:uppercase;letter-spacing:1px}.step-desc{color:var(--text-muted);font-size:13px;line-height:1.4}#finalSuccessView{display:none;width:100%;max-width:440px;text-align:center}.success-header-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:2px;color:var(--gold);background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.3);padding:6px 14px;border-radius:20px;text-transform:uppercase;margin-bottom:20px}.success-main-title{font-size:32px;font-weight:700;color:var(--text-main);margin-bottom:8px}.success-sub-title{font-size:15px;color:var(--text-muted);margin-bottom:30px}.success-receipt-card{background:var(--card-bg);border:1px solid var(--border-color);border-radius:24px;padding:28px 24px;text-align:left;position:relative;overflow:hidden;box-shadow:0 15px 40px rgba(0,0,0,0.6)}.success-receipt-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:var(--gold)}.receipt-top-row{display:flex;justify-content:space-between;margin-bottom:20px}.receipt-title{font-size:20px;font-weight:600;margin-bottom:4px}.receipt-updates-tag{font-size:11px;font-weight:700;color:var(--gold);transition:color .3s}.receipt-price-box{text-align:right}.receipt-price{font-size:22px;font-weight:700;color:var(--gold);margin-bottom:4px}.receipt-price-label{font-size:10px;color:var(--text-muted);text-transform:uppercase}.receipt-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}.receipt-grid-box{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:14px;padding:16px;text-align:center}.grid-box-val{font-size:16px;font-weight:700;margin-bottom:4px}.grid-box-lbl{font-size:10px;color:var(--text-muted);text-transform:uppercase}.receipt-footer-desc{font-size:12px;color:var(--text-muted);line-height:1.5;border-top:1px solid rgba(255,255,255,0.06);padding-top:16px;text-align:center}.receipt-action-btn{background:var(--gold);color:#0d0d0d;padding:14px 24px;border-radius:30px;font-size:12px;font-weight:800;display:flex;justify-content:center;gap:8px;margin-top:20px;text-decoration:none}
 </style>
 </head>
 <body>
@@ -15,35 +15,64 @@
         <div class="vip-pill-left"><span class="vip-star">✦</span><span data-en="Founding Spurtan Access" data-fr="Accès Spurtan Fondateur">Founding Spurtan Access</span></div>
         <div class="vip-pill-right" data-en="Own the Hour Before →" data-fr="Maîtrisez votre heure →">Own the Hour Before →</div>
     </div>
+    
+    <!-- HEADER -->
     <div class="header-container">
         <div class="logo-area" style="display: flex; flex-direction: column; align-items: flex-start;">
             <div style="display: flex; align-items: flex-start; line-height: 1; margin-bottom: 6px;"><span style="font-size: 32px; font-weight: 800; letter-spacing: 6px; color: #ffffff;">SPU</span><span style="font-size: 32px; font-weight: 800; letter-spacing: 2px; color: var(--gold);">R</span><span style="font-size: 14px; color: var(--gold); margin-top: 0px; margin-left: 4px;">✦</span></div>
-            <span style="font-size: 8px; font-weight: 700; letter-spacing: 2.5px; color: var(--gold); text-transform: uppercase;">SHOW UP READY™</span>
+            <span style="font-size: 8px; font-weight: 700; letter-spacing: 2.5px; color: var(--gold); text-transform: uppercase;" data-en="THE READINESS COMPANY" data-fr="LA MARQUE QUI VOUS PRÉPARE">THE READINESS COMPANY</span>
         </div>
         <div class="top-right-group">
-            <div class="live-badge"><div class="live-dot" id="liveDotIndicator"></div><span id="liveBadgeText">YVR • Yaletown • Live</span></div>
             <div class="controls-row">
-                <div class="toggle-capsule"><button onclick="setCity('yvr')" id="btn-yvr" class="active">YVR</button><span>|</span><button onclick="setCity('yyz')" id="btn-yyz" style="opacity: 0.5;">YYZ</button><span>|</span><button onclick="setCity('yul')" id="btn-yul">YUL</button></div>
                 <div class="toggle-capsule"><button onclick="switchLanguage('en')" id="btn-en" class="active">EN</button><span>|</span><button onclick="switchLanguage('fr')" id="btn-fr">FR</button></div>
             </div>
         </div>
     </div>
+    
+    <!-- CONCIERGE INDICATOR -->
+    <div class="concierge-indicator" style="width: 100%; max-width: 440px; display: flex; align-items: center; gap: 8px; margin-bottom: 35px; padding-left: 5px;">
+        <div class="live-dot" id="liveDotIndicator"></div>
+        <span id="liveBadgeText" style="font-size: 9px; font-weight: 700; letter-spacing: 1px; color: var(--text-muted); text-transform: uppercase;">CONCIERGE ONLINE — Yaletown, Vancouver</span>
+    </div>
+    
+    <!-- HERO SECTION -->
     <div class="hero-section">
-        <div class="hero-title" data-en="You don't need to know what will make you look better." data-fr="Pas besoin de savoir ce qui vous met en valeur.">You don't need to know what will make you look better.</div>
-        <div class="hero-title-gold" id="dynamicHeroSubtitle" data-en="We don't look at menus. We look at you." data-fr="Oubliez la carte. Notre seule référence, c'est vous.">We don't look at menus. We look at you.</div>
+        <div class="hero-title" data-en="SHOW UP READY." data-fr="SOYEZ PRÊT·E.">SHOW UP READY.</div>
+        <div class="hero-title-gold" id="dynamicHeroSubtitle" data-en="We don't look at menus. We look at you." data-fr="On s'occupe de vous.">We don't look at menus. We look at you.</div>
+        <div style="font-size: 13px; color: var(--text-muted); margin-top: 15px; font-weight: 500; letter-spacing: 0.5px;" data-en="Personal grooming, made effortless." data-fr="Les soins personnels, en toute simplicité.">Personal grooming, made effortless.</div>
     </div>
-    <div class="cta-container">
-        <div class="inline-pricing"><span id="displayPrice">$49.99 CAD</span> <span data-en="Priority Flat Rate" data-fr="Tarif Fixe Prioritaire">Priority Flat Rate</span><br><button type="button" onclick="safeOpenModal('codeModal')" style="background:none; border:none; color:var(--text-muted); font-size:10px; font-weight:700; text-decoration:underline; cursor:pointer; margin-top:8px;" data-en="HAVE SPURTAN CODE?" data-fr="AVEZ-UN CODE SPURTAN ?">HAVE SPURTAN CODE?</button></div>
+    
+    <!-- LOCATION SELECTOR -->
+    <div class="location-wrapper" style="width: 100%; max-width: 280px; margin: 0 auto 30px auto; text-align: center;">
+        <div style="font-size: 10px; font-weight: 700; letter-spacing: 2px; color: var(--text-muted); margin-bottom: 10px; text-transform: uppercase;" data-en="SELECT YOUR CITY" data-fr="VILLE DE VOTRE CHOIX">SELECT YOUR CITY</div>
+        <select id="mainCitySelect" class="modal-input" style="padding: 12px; margin-bottom: 0;" onchange="setCity(this.value)">
+            <option value="yvr" data-en="VANCOUVER" data-fr="VANCOUVER">VANCOUVER</option>
+            <option value="yul" data-en="MONTRÉAL" data-fr="MONTRÉAL">MONTRÉAL</option>
+            <option value="yyz" data-en="TORONTO" data-fr="TORONTO">TORONTO</option>
+        </select>
+    </div>
+    
+    <!-- ACTIVE BOOKING FLOW (VANCOUVER) -->
+    <div class="cta-container" id="activeBookingFlow">
+        <div class="inline-pricing"><span id="displayPrice">$49.99 CAD</span> <span data-en="Priority Flat Rate" data-fr="Tarif Fixe Prioritaire">Priority Flat Rate</span><br><button type="button" onclick="safeOpenModal('codeModal')" style="background:none; border:none; color:var(--text-muted); font-size:10px; font-weight:700; text-decoration:underline; cursor:pointer; margin-top:8px;" data-en="HAVE SPURTAN CODE?" data-fr="AVEZ-VOUS UN CODE SPURTAN ?">HAVE SPURTAN CODE?</button></div>
         <div>
-            <button class="ready-circle-btn" onclick="openIntercept('now')"><span class="ready-line-1">READY</span><span class="ready-line-2">NOW™</span></button>
-            <div class="cta-footer-note" data-en="A SPUR Specialist assesses what you need.<br>You just show up." data-fr="Un spécialiste SPUR évalue ce dont vous avez besoin.<br>Vous vous présentez, tout simplement.">A SPUR Specialist assesses what you need.<br>You just show up.</div>
+            <!-- READY NOW BUTTON ONLY MAIN SPUR -->
+            <button class="ready-circle-btn" onclick="openIntercept('now')">
+                <span class="ready-line-1" data-en="READY" data-fr="READY">READY</span>
+                <span class="ready-line-2" data-en="NOW™" data-fr="NOW™">NOW™</span>
+            </button>
+            <div class="cta-footer-note" data-en="A SPUR Specialist assesses what you need.<br>You just show up." data-fr="Dites-nous où vous êtes.<br>On s'occupe du reste.">A SPUR Specialist assesses what you need.<br>You just show up.</div>
         </div>
-        <button class="ready-later-btn" onclick="openIntercept('later')">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-            <span>READY LATER™</span>
-        </button>
-        <div class="active-hours-note" data-en="Active Concierge Hours: 9:00 AM – 8:00 PM (PT)" data-fr="Heures de conciergerie : 9h00 – 20h00 (HP)">Active Concierge Hours: 9:00 AM – 8:00 PM (PT)</div>
+        
+        <div class="active-hours-note" id="hoursNote" data-en="Active Concierge Hours: 9:00 AM – 8:00 PM (PT)" data-fr="Heures de conciergerie : 9h00 – 20h00 (HP)">Active Concierge Hours: 9:00 AM – 8:00 PM (PT)</div>
     </div>
+
+    <!-- WAITLIST FLOW (MONTREAL / TORONTO) -->
+    <div class="cta-container" id="waitlistFlow" style="display: none;">
+        <div class="inline-pricing" style="color: var(--text-muted);" data-en="WAITLIST OPEN" data-fr="LISTE D'ATTENTE OUVERTE">WAITLIST OPEN</div>
+        <button class="modal-capsule-btn-secondary" onclick="safeOpenModal('waitlistModal')" style="border-color: var(--gold); color: var(--gold); width: 220px; font-size: 12px; padding: 15px;" data-en="JOIN THE WAITLIST" data-fr="REJOINDRE LA LISTE D'ATTENTE">JOIN THE WAITLIST</button>
+    </div>
+    
     <div class="site-footer">
         <span data-en="© 2026 SPUR. All rights reserved." data-fr="© 2026 SPUR. Tous droits réservés.">© 2026 SPUR. All rights reserved.</span><br><br>
         <a onclick="safeOpenModal('howItWorksModal')" data-en="How It Works" data-fr="Comment ça marche">How It Works</a> | <a onclick="openHistoryModal()" data-en="My Bookings" data-fr="Mes Réservations">My Bookings</a><br><br>
@@ -51,10 +80,54 @@
     </div>
 </div>
 
-<!-- MODALS -->
-<div id="howItWorksModal" class="modal-overlay"><div class="modal-card"><h3 data-en="The SPUR Standard" data-fr="Le Standard SPUR">The SPUR Standard</h3><div class="detailed-steps"><div class="detailed-step-row"><div class="step-number" data-en="01. THE REQUEST" data-fr="01. LA DEMANDE">01. THE REQUEST</div><div class="step-desc" data-en="Tap Ready Now or schedule ahead. Zero menus." data-fr="Appuyez sur Prêt Maintenant ou planifiez. Zéro carte.">Tap Ready Now or schedule ahead. Zero menus.</div></div><div class="detailed-step-row"><div class="step-number" data-en="02. THE ALIGNMENT" data-fr="02. L'ALIGNEMENT">02. L'ALIGNEMENT</div><div class="step-desc" data-en="We pair you with a premier specialist tailored to your profile." data-fr="Nous vous associons à un spécialiste expert adapté à votre profil.">We pair you with a premier specialist tailored to your profile.</div></div><div class="detailed-step-row"><div class="step-number" data-en="03. THE CHAIR" data-fr="03. LE FAUTEUIL">03. THE CHAIR</div><div class="step-desc" data-en="Your seat is secured instantly. No waiting rooms." data-fr="Votre place est réservée instantanément. Aucune salle d'attente.">Your seat is secured instantly. No waiting rooms.</div></div><div class="detailed-step-row"><div class="step-number" data-en="04. THE CONSULT" data-fr="04. LA CONSULTATION">04. LA CONSULTATION</div><div class="step-desc" data-en="Your specialist determines exactly what you need. You approve the vision." data-fr="Votre spécialiste détermine exactement ce dont vous avez besoin. Vous approuvez la vision.">Your specialist determines exactly what you need. You approve the vision.</div></div><div class="detailed-step-row"><div class="step-number" data-en="05. THE EXECUTION" data-fr="05. L'EXÉCUTION">05. L'EXÉCUTION</div><div class="step-desc" data-en="Precision grooming, engineered for you. You review and approve the final finish." data-fr="Un service de précision, conçu pour vous. Vous examinez et approuvez la finition finale.">Precision grooming, engineered for you. You review and approve the final finish.</div></div><div class="detailed-step-row"><div class="step-number" data-en="06. THE DEPARTURE" data-fr="06. LE DÉPART">06. LE DÉPART</div><div class="step-desc" data-en="Frictionless digital checkout. You just walk out ready." data-fr="Paiement numérique sans friction. Vous repartez prêt.">Frictionless digital checkout. You just walk out ready.</div></div></div><div class="perks-mini-box" style="text-align: center; margin-top: 5px;"><strong data-en="The SPUR Guarantee:" data-fr="La Garantie SPUR :">The SPUR Guarantee:</strong><br><span data-en="Not ready? We redo it free.<br>Still not happy? Full refund." data-fr="Pas prêt ? Nous recommençons gratuitement.<br>Toujours pas satisfait ? Remboursement complet.">Not ready? We redo it free.<br>Still not happy? Full refund.</span></div><button class="modal-capsule-btn" onclick="closeModals()" data-en="GOT IT" data-fr="COMPRIS">GOT IT</button></div></div>
-<div id="historyModal" class="modal-overlay"><div class="modal-card" style="display: flex; flex-direction: column;"><h3 data-en="Your Bookings" data-fr="Vos Réservations">Your Bookings</h3><div id="historyContent" style="flex-grow: 1; max-height: 400px; overflow-y: auto; margin: 15px 0; text-align: left;"></div><button class="modal-capsule-btn" onclick="closeModals()" data-en="CLOSE" data-fr="FERMER" style="margin-top: auto;">CLOSE</button></div></div>
-<div id="interceptModal" class="modal-overlay"><div class="modal-card"><h3 data-en="Securing Your Chair" data-fr="Sécurisation de votre place">Securing Your Chair</h3><p id="interceptStatusDesc" data-en="Recognizing your profile preferences..." data-fr="Reconnaissance de vos préférences de profil...">Recognizing your profile preferences...</p><div style="margin: 20px 0;"><strong style="color: var(--text-main); font-size: 16px;" id="recognizedSpecialistText">Request again?</strong></div><button class="modal-capsule-btn" onclick="confirmPreviousSpecialist()" data-en="YES" data-fr="OUI">YES</button><button class="modal-capsule-btn-secondary" onclick="skipIntercept()" data-en="PRIORITY MATCH" data-fr="MATCH PRIORITAIRE">PRIORITY MATCH</button><button class="modal-close" onclick="closeModals()" data-en="CANCEL" data-fr="ANNULER">CANCEL</button></div></div>
+<!-- HOW IT WORKS MODAL -->
+<div id="howItWorksModal" class="modal-overlay">
+    <div class="modal-card">
+        <h3 data-en="The SPUR Standard" data-fr="Le Standard SPUR">The SPUR Standard</h3>
+        <div class="detailed-steps">
+            <div class="detailed-step-row">
+                <div class="step-number" data-en="01. WE FIND YOUR SPECIALIST" data-fr="01. NOUS TROUVONS VOTRE SPÉCIALISTE">01. WE FIND YOUR SPECIALIST</div>
+                <div class="step-desc" data-en="We find a specialist near you. You go to them." data-fr="Nous trouvons un spécialiste près de chez vous. Vous vous rendez à son établissement.">We find a specialist near you. You go to them.</div>
+            </div>
+            <div class="detailed-step-row">
+                <div class="step-number" data-en="02. THE MATCH" data-fr="02. NOUS VOUS METTONS EN RELATION">02. THE MATCH</div>
+                <div class="step-desc" data-en="We connect you with an appropriate available specialist." data-fr="Nous vous mettons en contact avec un spécialiste disponible qui correspond à votre demande.">We connect you with an appropriate available specialist.</div>
+            </div>
+            <div class="detailed-step-row">
+                <div class="step-number" data-en="03. THE CONSULTATION" data-fr="03. LA CONSULTATION">03. THE CONSULTATION</div>
+                <div class="step-desc" data-en="Your specialist assesses and recommends. You approve." data-fr="Votre spécialiste évalue vos besoins et vous recommande une option. Vous donnez votre accord avant le service.">Your specialist assesses and recommends. You approve.</div>
+            </div>
+            <div class="detailed-step-row">
+                <div class="step-number" data-en="04. SHOW UP READY" data-fr="04. VOUS REPARTEZ PRÊT·E">04. SHOW UP READY</div>
+                <div class="step-desc" data-en="Your service is completed. You leave ready." data-fr="Le service convenu est réalisé. Vous repartez prêt·e pour la suite.">Your service is completed. You leave ready.</div>
+            </div>
+        </div>
+        <div class="perks-mini-box" style="text-align: center; margin-top: 5px;">
+            <a href="terms.html#guarantee" style="color:var(--gold); text-decoration:underline; font-weight:700;" data-en="The SPUR Guarantee:" data-fr="La Garantie SPUR :">The SPUR Guarantee:</a><br>
+            <span data-en="Not ready? We redo it free.<br>Still not happy? Full refund." data-fr="Pas prêt·e ? Nous recommençons gratuitement.<br>Toujours pas satisfait·e ? Remboursement complet.">Not ready? We redo it free.<br>Still not happy? Full refund.</span>
+        </div>
+        <button class="modal-capsule-btn" onclick="closeModals()" data-en="GOT IT" data-fr="COMPRIS">GOT IT</button>
+    </div>
+</div>
+
+<div id="historyModal" class="modal-overlay">
+    <div class="modal-card" style="display: flex; flex-direction: column;">
+        <h3 data-en="Your Bookings" data-fr="Vos Réservations">Your Bookings</h3>
+        <div id="historyContent" style="flex-grow: 1; max-height: 400px; overflow-y: auto; margin: 15px 0; text-align: left;"></div>
+        <button class="modal-capsule-btn" onclick="closeModals()" data-en="CLOSE" data-fr="FERMER" style="margin-top: auto;">CLOSE</button>
+    </div>
+</div>
+
+<div id="interceptModal" class="modal-overlay">
+    <div class="modal-card">
+        <h3 data-en="Securing Your Chair" data-fr="Sécurisation de votre place">Securing Your Chair</h3>
+        <p id="interceptStatusDesc" data-en="Recognizing your profile preferences..." data-fr="Reconnaissance de vos préférences de profil...">Recognizing your profile preferences...</p>
+        <div style="margin: 20px 0;"><strong style="color: var(--text-main); font-size: 16px;" id="recognizedSpecialistText">Request again?</strong></div>
+        <button class="modal-capsule-btn" onclick="confirmPreviousSpecialist()" data-en="YES" data-fr="OUI">YES</button>
+        <button class="modal-capsule-btn-secondary" onclick="skipIntercept()" data-en="PRIORITY MATCH" data-fr="MATCH PRIORITAIRE">PRIORITY MATCH</button>
+        <button class="modal-close" onclick="closeModals()" data-en="CANCEL" data-fr="ANNULER">CANCEL</button>
+    </div>
+</div>
 
 <!-- READY NOW MODAL -->
 <div id="verifyModal" class="modal-overlay">
@@ -62,8 +135,13 @@
         <h3 class="dynamic-header" data-en="Get Ready Now" data-fr="Préparez-vous Maintenant">Get Ready Now</h3>
         <p class="dynamic-desc" data-en="Enter your details. We will coordinate your match." data-fr="Entrez vos coordonnées. Nous coordonnerons votre match.">Enter your details. We will coordinate your match.</p>
         <form action="https://formspree.io/f/mjykllwj" method="POST" onsubmit="handleSubmit(event, 'now')">
-            <input type="text" name="_gotcha" style="display:none"><input type="hidden" name="city_location" class="formCityField" value="Yaletown, Vancouver"><input type="hidden" name="dispatch_channel" value="Priority Ready"><input type="hidden" name="requested_specialist" class="specialistHiddenField" value="Priority Match">
-            <div id="inputFieldsWrapper"><div class="contact-fields"><input type="text" class="modal-input" name="client_name" id="nameInputNow" placeholder="First Name" data-en-placeholder="First Name" data-fr-placeholder="Prénom" required><input type="tel" class="modal-input" name="client_phone" id="phoneInputNow" placeholder="10 Digit Mobile" data-en-placeholder="10 Digit Mobile" data-fr-placeholder="Mobile à 10 chiffres" pattern="[0-9]{10}" required></div></div>
+            <input type="text" name="_gotcha" style="display:none"><input type="hidden" name="city_location" class="formCityField" value="Vancouver"><input type="hidden" name="dispatch_channel" value="Priority Ready"><input type="hidden" name="requested_specialist" class="specialistHiddenField" value="Priority Match">
+            <div id="inputFieldsWrapper">
+                <div class="contact-fields">
+                    <input type="text" class="modal-input" name="client_name" id="nameInputNow" placeholder="First Name" data-en-placeholder="First Name" data-fr-placeholder="Prénom" required>
+                    <input type="tel" class="modal-input" name="client_phone" id="phoneInputNow" placeholder="10 Digit Mobile" data-en-placeholder="10 Digit Mobile" data-fr-placeholder="Mobile à 10 chiffres" pattern="[0-9]{10}" required>
+                </div>
+            </div>
             <select class="modal-input" name="client_occasion" id="occasionSelectNow">
                 <option value="" disabled selected data-en="Focus / Occasion (Optional)" data-fr="Objectif / Occasion (Optionnel)">Focus / Occasion (Optional)</option>
                 <option value="Just for You" class="gold-tier" data-en="Just for You™ — The Occasion is Me" data-fr="Juste pour vous™ — Je suis l'occasion">Just for You™ — The Occasion is Me</option>
@@ -81,14 +159,19 @@
     </div>
 </div>
 
-<!-- READY LATER MODAL -->
+<!-- READY LATER MODAL IN BACKGROUND -->
 <div id="laterModal" class="modal-overlay">
     <div class="modal-card">
-        <h3 class="dynamic-header" data-en="Plan Ahead" data-fr="Planifier à L'avance">Plan Ahead</h3>
-        <p class="dynamic-desc" data-en="Commit to a scheduled visit. We'll coordinate availability." data-fr="Engagez-vous pour une visite planifiée.">Commit to a scheduled visit. We'll coordinate availability.</p>
+        <h3 class="dynamic-header" data-en="Plan Ahead" data-fr="Planifier à l'avance">Plan Ahead</h3>
+        <p class="dynamic-desc" data-en="Commit to a scheduled visit. We'll coordinate availability." data-fr="Engagez-vous pour une visite planifiée. Nous coordonnerons la disponibilité.">Commit to a scheduled visit. We'll coordinate availability.</p>
         <form action="https://formspree.io/f/mjykllwj" method="POST" onsubmit="handleSubmit(event, 'later')">
-            <input type="text" name="_gotcha" style="display:none"><input type="hidden" name="city_location" class="formCityField" value="Yaletown, Vancouver"><input type="hidden" name="dispatch_channel" value="Scheduled Request"><input type="hidden" name="requested_specialist" class="specialistHiddenField" value="Priority Match">
-            <div id="inputFieldsWrapperLater"><div class="contact-fields"><input type="text" class="modal-input" name="client_name" placeholder="First Name" data-en-placeholder="First Name" data-fr-placeholder="Prénom" required><input type="tel" class="modal-input" name="client_phone" placeholder="10 Digit Mobile" data-en-placeholder="10 Digit Mobile" data-fr-placeholder="Mobile à 10 chiffres" pattern="[0-9]{10}" required></div></div>
+            <input type="text" name="_gotcha" style="display:none"><input type="hidden" name="city_location" class="formCityField" value="Vancouver"><input type="hidden" name="dispatch_channel" value="Scheduled Request"><input type="hidden" name="requested_specialist" class="specialistHiddenField" value="Priority Match">
+            <div id="inputFieldsWrapperLater">
+                <div class="contact-fields">
+                    <input type="text" class="modal-input" name="client_name" placeholder="First Name" data-en-placeholder="First Name" data-fr-placeholder="Prénom" required>
+                    <input type="tel" class="modal-input" name="client_phone" placeholder="10 Digit Mobile" data-en-placeholder="10 Digit Mobile" data-fr-placeholder="Mobile à 10 chiffres" pattern="[0-9]{10}" required>
+                </div>
+            </div>
             <select class="modal-input" name="client_occasion" id="occasionSelectLater">
                 <option value="" disabled selected data-en="Focus / Occasion (Optional)" data-fr="Objectif / Occasion (Optionnel)">Focus / Occasion (Optional)</option>
                 <option value="Just for You" class="gold-tier" data-en="Just for You™ — The Occasion is Me" data-fr="Juste pour vous™ — Je suis l'occasion">Just for You™ — The Occasion is Me</option>
@@ -111,30 +194,86 @@
     </div>
 </div>
 
-<div id="codeModal" class="modal-overlay"><div class="modal-card"><h3 data-en="Enter SPURTAN Code" data-fr="Entrez le code SPURTAN">Enter SPURTAN Code</h3><p data-en="Please enter your unique membership code." data-fr="Veuillez entrer votre code d'adhésion unique.">Please enter your unique membership code.</p><form action="https://formspree.io/f/mjykllwj" method="POST" onsubmit="handleCodeSubmit(event)"><input type="text" name="_gotcha" style="display:none"><input type="hidden" name="city_location" class="formCityField" value="Yaletown, Vancouver"><input type="text" class="modal-input" name="spurtan_code" placeholder="Your code" id="spurInput" required style="text-transform: uppercase;"><button type="submit" class="modal-circle-btn" data-en="APPLY" data-fr="APPLIQUER">APPLY</button></form><div class="code-modal-bridge"><span data-en="Don't have a code yet?" data-fr="Vous n'avez pas encore de code ?">Don't have a code yet?</span><br><button type="button" onclick="switchModal('codeModal', 'spurtanModal')" data-en="Request Founding Spurtan Access →" data-fr="Demander l'accès Spurtan Fondateur →">Request Founding Spurtan Access →</button></div><button class="modal-close" onclick="closeModals()" data-en="CANCEL" data-fr="ANNULER">CANCEL</button></div></div>
-<div id="spurtanModal" class="modal-overlay"><div class="modal-card"><h3 data-en="Founding Spurtan Access" data-fr="Accès Spurtan Fondateur">Founding Spurtan Access</h3><div id="spotsRemainingBadge" style="background: rgba(212,175,55,0.1); color: var(--gold); border: 1px solid rgba(212,175,55,0.3); padding: 8px; border-radius: 20px; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 15px; display: inline-block;">Calculating spots remaining...</div><p data-en="Own the hour before. Join the private pilot and lock in preferred rates." data-fr="Maîtrisez votre heure. Rejoignez le pilote privé et bloquez les tarifs préférentiels.">Own the hour before. Join the private pilot and lock in preferred rates.</p><div class="perks-mini-box" style="text-align: left;">• <strong data-en="$39.99 CAD All-In" data-fr="39,99 $ CAD Tout Inclus">$39.99 CAD All-In</strong> <span data-en="for your first visit (Standard: $49.99)." data-fr="pour votre 1ère visite (Standard : 49,99 $).">for your first visit (Standard: $49.99).</span><br>• <strong data-en="The SPUR Guarantee:" data-fr="La Garantie SPUR :">The SPUR Guarantee:</strong> <span data-en="Not ready? We redo it free. Still not happy? Full refund." data-fr="Pas prêt ? Nous recommençons gratuitement. Toujours pas satisfait ? Remboursement complet.">Not ready? We redo it free. Still not happy? Full refund.</span></div><form action="https://formspree.io/f/mjykllwj" method="POST" onsubmit="handleSpurtanRegister(event)"><input type="text" name="_gotcha" style="display:none"><input type="text" class="modal-input" name="client_name" required placeholder="First Name" data-en-placeholder="First Name" data-fr-placeholder="Prénom"><input type="tel" class="modal-input" name="client_phone" required placeholder="10 Digit Mobile" data-en-placeholder="10 Digit Mobile" data-fr-placeholder="Mobile à 10 chiffres" pattern="[0-9]{10}"><select class="modal-input" name="launch_node" id="spurtanNodeSelect" required><option value="Yaletown, Vancouver">Yaletown, Vancouver (Live)</option><option value="Le Plateau, Montreal">Montreal (Waitlist)</option><option value="Financial District, Toronto">Toronto (Waitlist)</option></select><button type="submit" class="modal-capsule-btn" id="spurtanSubmitBtn" data-en="CLAIM FOUNDING ACCESS" data-fr="RÉCLAMER MON ACCÈS">CLAIM FOUNDING ACCESS</button></form><button class="modal-close" onclick="closeModals()" data-en="CANCEL" data-fr="ANNULER">CANCEL</button></div></div>
+<div id="codeModal" class="modal-overlay">
+    <div class="modal-card">
+        <h3 data-en="Enter SPURTAN Code" data-fr="Entrez le code SPURTAN">Enter SPURTAN Code</h3>
+        <p data-en="Please enter your unique membership code." data-fr="Veuillez entrer votre code d'adhésion unique.">Please enter your unique membership code.</p>
+        <form action="https://formspree.io/f/mjykllwj" method="POST" onsubmit="handleCodeSubmit(event)">
+            <input type="text" name="_gotcha" style="display:none"><input type="hidden" name="city_location" class="formCityField" value="Vancouver">
+            <input type="text" class="modal-input" name="spurtan_code" placeholder="Your code" id="spurInput" required style="text-transform: uppercase;">
+            <button type="submit" class="modal-circle-btn" data-en="APPLY" data-fr="APPLIQUER">APPLY</button>
+        </form>
+        <div class="code-modal-bridge">
+            <span data-en="Don't have a code yet?" data-fr="Vous n'avez pas encore de code ?">Don't have a code yet?</span><br>
+            <button type="button" onclick="switchModal('codeModal', 'spurtanModal')" data-en="Request Founding Spurtan Access →" data-fr="Demander l'accès Spurtan Fondateur →">Request Founding Spurtan Access →</button>
+        </div>
+        <button class="modal-close" onclick="closeModals()" data-en="CANCEL" data-fr="ANNULER">CANCEL</button>
+    </div>
+</div>
 
-<!-- SUCCESS SCREEN WITH LUXURY HOSPITALITY CANCEL LINK -->
+<div id="spurtanModal" class="modal-overlay">
+    <div class="modal-card">
+        <h3 data-en="Founding Spurtan Access" data-fr="Accès Spurtan Fondateur">Founding Spurtan Access</h3>
+        <div id="spotsRemainingBadge" style="background: rgba(212,175,55,0.1); color: var(--gold); border: 1px solid rgba(212,175,55,0.3); padding: 8px; border-radius: 20px; font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 15px; display: inline-block;"></div>
+        <p data-en="Own the hour before. Join the private pilot and lock in preferred rates." data-fr="Maîtrisez votre heure. Rejoignez le pilote privé et bloquez les tarifs préférentiels.">Own the hour before. Join the private pilot and lock in preferred rates.</p>
+        <div class="perks-mini-box" style="text-align: left;">
+            • <strong data-en="$39.99 CAD Founding Offer" data-fr="39,99 $ CAD Offre Fondateur">$39.99 CAD Founding Offer</strong> <span data-en="for your first visit (Standard: $49.99 CAD)." data-fr="pour votre 1ère visite (Standard : 49,99 $ CAD).">for your first visit (Standard: $49.99 CAD).</span><br>
+            • <a href="terms.html#guarantee" style="color:var(--gold); text-decoration:underline; font-weight:700;" data-en="The SPUR Guarantee:" data-fr="La Garantie SPUR :">The SPUR Guarantee:</a> <span data-en="Not ready? We redo it free. Still not happy? Full refund." data-fr="Pas prêt·e ? Nous recommençons gratuitement. Toujours pas satisfait·e ? Remboursement complet.">Not ready? We redo it free. Still not happy? Full refund.</span>
+        </div>
+        <form action="https://formspree.io/f/mjykllwj" method="POST" onsubmit="handleSpurtanRegister(event)">
+            <input type="text" name="_gotcha" style="display:none">
+            <input type="text" class="modal-input" name="client_name" required placeholder="First Name" data-en-placeholder="First Name" data-fr-placeholder="Prénom">
+            <input type="tel" class="modal-input" name="client_phone" required placeholder="10 Digit Mobile" data-en-placeholder="10 Digit Mobile" data-fr-placeholder="Mobile à 10 chiffres" pattern="[0-9]{10}">
+            <select class="modal-input" name="launch_node" id="spurtanNodeSelect" required>
+                <option value="Vancouver" data-en="Vancouver (Live)" data-fr="Vancouver (En Direct)">Vancouver (Live)</option>
+                <option value="Montreal" data-en="Montreal (Waitlist)" data-fr="Montréal (Liste d'attente)">Montreal (Waitlist)</option>
+            </select>
+            <button type="submit" class="modal-capsule-btn" id="spurtanSubmitBtn" data-en="CLAIM FOUNDING ACCESS" data-fr="RÉCLAMER MON ACCÈS">CLAIM FOUNDING ACCESS</button>
+        </form>
+        <button class="modal-close" onclick="closeModals()" data-en="CANCEL" data-fr="ANNULER">CANCEL</button>
+    </div>
+</div>
+
+<!-- DEDICATED WAITLIST MODAL (MONTREAL & TORONTO) -->
+<div id="waitlistModal" class="modal-overlay">
+    <div class="modal-card">
+        <h3 class="dynamic-header" data-en="Join the Waitlist" data-fr="Rejoindre la liste d'attente">Join the Waitlist</h3>
+        <p class="dynamic-desc" data-en="SPUR is expanding. Secure your priority access." data-fr="SPUR s'agrandit. Sécurisez votre accès prioritaire.">SPUR is expanding. Secure your priority access.</p>
+        <form action="https://formspree.io/f/mjykllwj" method="POST" onsubmit="handleWaitlistSubmit(event)">
+            <input type="text" name="_gotcha" style="display:none">
+            <input type="hidden" name="dispatch_channel" value="Waitlist Registration">
+            <input type="text" class="modal-input" name="client_name" placeholder="First Name" data-en-placeholder="First Name" data-fr-placeholder="Prénom" required>
+            <input type="email" class="modal-input" name="client_email" placeholder="Email Address" data-en-placeholder="Email Address" data-fr-placeholder="Adresse courriel" required>
+            <select class="modal-input" name="preferred_city" id="waitlistCitySelect" required>
+                <option value="Montréal">Montréal</option>
+                <option value="Toronto">Toronto</option>
+            </select>
+            <button type="submit" class="modal-capsule-btn" data-en="JOIN WAITLIST" data-fr="CONFIRMER L'INSCRIPTION">JOIN WAITLIST</button>
+        </form>
+        <button class="modal-close" onclick="closeModals()" data-en="CANCEL" data-fr="ANNULER">CANCEL</button>
+    </div>
+</div>
+
+<!-- SUCCESS SCREEN -->
 <div id="finalSuccessView">
-    <div class="success-header-tag" id="receiptHeaderTag">Verified Request</div>
+    <div class="success-header-tag" id="receiptHeaderTag" data-en="Verified Request" data-fr="Demande Vérifiée">Verified Request</div>
     <div class="success-main-title" data-en="Request Received." data-fr="Demande Reçue.">Request Received.</div>
-    <div class="success-sub-title" data-en="We are coordinating your specialist match." data-fr="Nous coordonnons votre match de spécialiste.">We are coordinating your specialist match.</div>
+    <div class="success-sub-title" data-en="We are coordinating your specialist match." data-fr="Nous coordonnons votre spécialiste.">We are coordinating your specialist match.</div>
     <div class="success-receipt-card">
         <div class="receipt-top-row">
-            <div><div class="receipt-title" data-en="Check your messages" data-fr="Vérifiez vos messages">Check your messages</div><div class="receipt-updates-tag" id="displayPhoneLine">CONCIERGE LINE: ACTIVE</div></div>
+            <div><div class="receipt-title" data-en="Check your messages" data-fr="Vérifiez vos messages">Check your messages</div><div class="receipt-updates-tag" id="displayPhoneLine" data-en="CONCIERGE LINE: ACTIVE" data-fr="LIGNE CONCIERGE : ACTIVE">CONCIERGE LINE: ACTIVE</div></div>
             <div class="receipt-price-box"><div class="receipt-price" id="finalReceiptPrice">$49.99</div><div class="receipt-price-label" data-en="Final Total" data-fr="Total Final">Final Total</div></div>
         </div>
         <div class="receipt-grid">
-            <div class="receipt-grid-box"><div class="grid-box-val">Verified</div><div class="grid-box-lbl" data-en="Coordination" data-fr="Coordination">Coordination</div></div>
-            <div class="receipt-grid-box"><div class="grid-box-val" id="receiptTargetArea">Yaletown, Vancouver</div><div class="grid-box-lbl" data-en="Location" data-fr="Lieu">Location</div></div>
+            <div class="receipt-grid-box"><div class="grid-box-val" data-en="Verified" data-fr="Vérifié">Verified</div><div class="grid-box-lbl" data-en="Coordination" data-fr="Coordination">Coordination</div></div>
+            <div class="receipt-grid-box"><div class="grid-box-val" id="receiptTargetArea">Vancouver</div><div class="grid-box-lbl" data-en="Location" data-fr="Lieu">Location</div></div>
         </div>
-        <div class="receipt-footer-desc" data-en="Pay after your visit with one tap, only once you feel ready." data-fr="Payez après votre visite en un clic, seulement une fois que vous vous sentez prêt.">Pay after your visit with one tap, only once you feel ready.</div>
-        <a href="#" id="whatsappAutoBtn" class="receipt-action-btn" target="_blank"><span data-en="💬 CONFIRM VIA WHATSAPP (READY)" data-fr="💬 CONFIRMER VIA WHATSAPP (PRÊT)">💬 CONFIRM VIA WHATSAPP (READY)</span></a>
+        <div class="receipt-footer-desc" data-en="Pay after your visit with one tap, only once you feel ready." data-fr="Payez après votre visite en un clic, seulement une fois que vous vous sentez prêt·e.">Pay after your visit with one tap, only once you feel ready.</div>
+        <a href="#" id="whatsappAutoBtn" class="receipt-action-btn" target="_blank"><span data-en="💬 CONFIRM VIA WHATSAPP (READY)" data-fr="💬 CONFIRMER VIA WHATSAPP (READY NOW)">💬 CONFIRM VIA WHATSAPP (READY)</span></a>
         <button onclick="returnToHome()" class="modal-capsule-btn-secondary" style="margin-top: 15px; border-color: transparent;" data-en="← BACK TO HOME" data-fr="← RETOUR À L'ACCUEIL">← BACK TO HOME</button>
         
-        <!-- CLICKABLE LUXURY CANCEL LINK (DYNAMIC LANGUAGE) -->
         <div style="margin-top: 15px; font-size: 11px; color: var(--text-muted);">
-            <span data-en="Change of plans?" data-fr="Changement de programme ?">Change of plans?</span> 
+            <span data-en="Change of plans?" data-fr="Un changement de programme ?">Change of plans?</span> 
             <a href="https://wa.me/14387251010?text=Hello%20SPUR%20%E2%80%94%20I%20need%20to%20modify%20my%20recent%20request." target="_blank" style="color: var(--text-main); text-decoration: underline; font-weight: 600;">
                 <span data-en="Message Concierge." data-fr="Contactez le Concierge.">Message Concierge.</span>
             </a>
@@ -144,50 +283,314 @@
 
 <script>
 let currentCity='yvr';const SPUR_WHATSAPP_NUMBER='14387251010';
-const cityData={yvr:{enBadge:"YVR • Yaletown • Live",frBadge:"YVR • Yaletown • En Direct",areaName:"Yaletown, Vancouver",isLive:true},yyz:{enBadge:"YYZ • Waitlist",frBadge:"YYZ • Liste d'attente",areaName:"Financial District, Toronto",isLive:false},yul:{enBadge:"YUL • Waitlist",frBadge:"YUL • Liste d'attente",areaName:"Le Plateau, Montréal",isLive:false}};
+const cityData = {
+    yvr: { enBadge: "CONCIERGE ONLINE — Yaletown, Vancouver", enOffline: "CONCIERGE OFFLINE — Yaletown, Vancouver", frBadge: "EN SERVICE — Yaletown, Vancouver", frOffline: "HORS SERVICE — Yaletown, Vancouver", areaName: "Vancouver", isLive: true, tz: "America/Los_Angeles" },
+    yul: { enBadge: "WAITLIST — Montréal", frBadge: "LISTE D'ATTENTE — Montréal", areaName: "Montréal", isLive: false, tz: "America/Toronto" },
+    yyz: { enBadge: "WAITLIST — Toronto", frBadge: "LISTE D'ATTENTE — Toronto", areaName: "Toronto", isLive: false, tz: "America/Toronto" }
+};
 const SUPABASE_URL='https://quqcgjkbvajcltwuoqvz.supabase.co';const SUPABASE_ANON_KEY='sb_publishable_h-5S_3VCTLKsN8iVUc_LxQ_T7rn1HlJ';
 const supabaseClient=window.supabase?window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY):null;
 
-function isPTHours(){try{const now=new Date();const ptString=now.toLocaleString("en-US",{timeZone:"America/Los_Angeles"});const h=new Date(ptString).getHours();return h>=9&&h<20;}catch(e){return true;}}
+function isPTHours(timezone){
+    try{
+        const now=new Date();
+        const ptString=now.toLocaleString("en-US",{timeZone:timezone || "America/Los_Angeles"});
+        const h=new Date(ptString).getHours();
+        return h>=9&&h<20;
+    }catch(e){return true;}
+}
 function returnToHome(){document.getElementById('finalSuccessView').style.display='none';document.getElementById('mainAppContainer').style.display='flex';window.scrollTo({top:0,behavior:'smooth'});}
 
 async function openHistoryModal(){safeOpenModal('historyModal');const historyContent=document.getElementById('historyContent');const lang=localStorage.getItem('spur_lang')||'en';let bookingsData=JSON.parse(localStorage.getItem('spur_history')||'[]');if(bookingsData.length===0){historyContent.innerHTML=`<div style="text-align:center; color: var(--text-muted); font-size: 12px; margin-top: 20px;">${lang==='fr'?"Aucune réservation passée trouvée sur cet appareil.":"No past bookings found on this device."}</div>`;return;}let html='';bookingsData.forEach(req=>{const dateObj=new Date(req.date);const formattedDate=dateObj.toLocaleDateString(lang==='fr'?'fr-CA':'en-CA',{month:'short',day:'numeric',year:'numeric'});html+=`<div class="perks-mini-box" style="margin-bottom: 10px;"><div style="display: flex; justify-content: space-between; margin-bottom: 6px;"><strong style="color: var(--gold); font-size: 11px;">${formattedDate}</strong><span style="font-size: 10px; color: #2ecc71; font-weight: 700;">${(req.type||'now').toUpperCase()}</span></div><div style="font-size: 12px; color: var(--text-main); margin-bottom: 4px;">${req.service}</div><div style="font-size: 10px; color: var(--text-muted);">📍 ${req.city}</div></div>`;});historyContent.innerHTML=html;}
 
-async function updateLiveCounter(){if(!supabaseClient)return;try{const { data, error } = await supabaseClient.rpc('get_spurtan_count');if(error)throw error;const usedCodes=data||0;const remainingCodes=99-usedCodes;const badge=document.getElementById('spotsRemainingBadge');const lang=localStorage.getItem('spur_lang')||'en';if(remainingCodes<=0){badge.innerText=lang==='fr'?"LISTE D'ATTENTE SEULEMENT":"WAITLIST ONLY";badge.style.color="#ff4757";badge.style.borderColor="rgba(255, 71, 87, 0.3)";badge.style.background="rgba(255, 71, 87, 0.1)";document.getElementById('spurtanSubmitBtn').disabled=true;}else{badge.innerText=lang==='fr'?`Seulement ${remainingCodes} places restantes`:`Only ${remainingCodes} spots remaining`;}}catch(err){document.getElementById('spotsRemainingBadge').style.display='none';}}
+async function updateLiveCounter(){
+    if(!supabaseClient)return;
+    try{
+        const { data, error } = await supabaseClient.rpc('get_spurtan_count');
+        if(error)throw error;
+        const usedCodes=data||0;
+        const remainingCodes=99-usedCodes;
+        const badge=document.getElementById('spotsRemainingBadge');
+        const lang=localStorage.getItem('spur_lang')||'en';
+        if(remainingCodes<=0){
+            badge.innerText=lang==='fr'?"LISTE D'ATTENTE SEULEMENT":"WAITLIST ONLY";
+            badge.style.color="#ff4757";badge.style.borderColor="rgba(255, 71, 87, 0.3)";badge.style.background="rgba(255, 71, 87, 0.1)";
+            document.getElementById('spurtanSubmitBtn').disabled=true;
+        }else{
+            badge.innerText=lang==='fr'?`${remainingCodes} places restantes`:`${remainingCodes} spots remaining`;
+        }
+    }catch(err){document.getElementById('spotsRemainingBadge').style.display='none';}
+}
 
 async function checkReturningUserRealtime(){try{if(!supabaseClient)return;const savedPhone=localStorage.getItem('spur_user_phone');if(!savedPhone)return;const{data}=await supabaseClient.from('clients').select('name, last_specialist, spurtan_code').eq('phone',savedPhone).single();if(data){if(data.name)localStorage.setItem('spur_user_name',data.name);if(data.last_specialist)localStorage.setItem('last_specialist',data.last_specialist);let hasPastVisits=false;try{const{count}=await supabaseClient.from('requests').select('*',{count:'exact',head:true}).eq('phone',savedPhone);hasPastVisits=count&&count>0;}catch(e){}const localDiscountUsed=localStorage.getItem('spur_discount_used')==='true';if(data.spurtan_code&&!hasPastVisits&&!localDiscountUsed){localStorage.setItem('spur_applied_code',data.spurtan_code);const priceDisplay=document.getElementById('displayPrice');if(priceDisplay)priceDisplay.textContent="$39.99 CAD";}else{localStorage.removeItem('spur_applied_code');localStorage.setItem('spur_discount_used','true');const priceDisplay=document.getElementById('displayPrice');if(priceDisplay)priceDisplay.textContent="$49.99 CAD";}}}catch(err){}}
 
 async function syncClientToSupabase(name,phone,specialist){try{if(!supabaseClient)return;const appliedCode=localStorage.getItem('spur_applied_code')||null;const payload={phone:phone,name:name,last_specialist:specialist};if(appliedCode)payload.spurtan_code=appliedCode;await supabaseClient.from('clients').upsert(payload,{onConflict:'phone'});}catch(err){}}
 function switchModal(closeId,openId){document.getElementById(closeId).style.display='none';safeOpenModal(openId);}
-function setCity(city){if(city!=='yvr'&&city!=='yul'&&city!=='yyz')return;currentCity=city;document.getElementById('btn-yvr').classList.toggle('active',city==='yvr');document.getElementById('btn-yyz').classList.toggle('active',city==='yyz');document.getElementById('btn-yul').classList.toggle('active',city==='yul');document.querySelectorAll('.formCityField').forEach(el=>el.value=cityData[city].areaName);document.getElementById('receiptTargetArea').innerText=cityData[city].areaName;updateBadgeText();localStorage.setItem('spur_active_city',city);}
-function updateBadgeText(){const lang=localStorage.getItem('spur_lang')||'en';const liveDot=document.getElementById('liveDotIndicator');const badgeText=document.getElementById('liveBadgeText');if(currentCity==='yvr'){if(isPTHours()){liveDot.style.backgroundColor="#2ecc71";liveDot.style.boxShadow="0 0 6px #2ecc71";badgeText.innerText=cityData['yvr'][lang==='fr'?'frBadge':'enBadge'];}else{liveDot.style.backgroundColor="#7f8c8d";liveDot.style.boxShadow="none";badgeText.innerText=lang==='fr'?"YVR • YALETOWN • HORS LIGNE":"YVR • YALETOWN • OFFLINE";}}else{liveDot.style.backgroundColor="#f39c12";liveDot.style.boxShadow="0 0 6px #f39c12";badgeText.innerText=cityData[currentCity][lang==='fr'?'frBadge':'enBadge'];}}
-function switchLanguage(lang){document.getElementById('btn-en').classList.toggle('active',lang==='en');document.getElementById('btn-fr').classList.toggle('active',lang==='fr');document.querySelectorAll('[data-en]').forEach(el=>{if(el.hasAttribute('data-fr')){el.innerHTML=lang==='fr'?el.getAttribute('data-fr'):el.getAttribute('data-en');}});document.querySelectorAll('[data-en-placeholder]').forEach(el=>{if(lang==='fr'&&el.hasAttribute('data-fr-placeholder')){el.placeholder=el.getAttribute('data-fr-placeholder');}else if(lang==='en'&&el.hasAttribute('data-en-placeholder')){el.placeholder=el.getAttribute('data-en-placeholder');}});const savedName=localStorage.getItem('spur_user_name');if(savedName){const sub=document.getElementById('dynamicHeroSubtitle');if(sub)sub.textContent=lang==='fr'?"Bon retour, "+savedName.split(' ')[0]+".":"Welcome back, "+savedName.split(' ')[0]+".";document.querySelectorAll('.dynamic-header').forEach(header=>{if(header.textContent.includes('Welcome back')||header.textContent.includes('Bon retour')){header.textContent=lang==='fr'?"Bon retour, "+savedName.split(' ')[0]:"Welcome back, "+savedName.split(' ')[0];}});}localStorage.setItem('spur_lang',lang);updateBadgeText();}
+
+function setCity(city){
+    if(!cityData[city]) return;
+    currentCity=city;
+    
+    // Sync dropdown
+    const select=document.getElementById('mainCitySelect');
+    if(select && select.value!==city) select.value=city;
+    
+    // Sync internal hidden fields
+    document.querySelectorAll('.formCityField').forEach(el=>el.value=cityData[city].areaName);
+    const waitlistCitySelect = document.getElementById('waitlistCitySelect');
+    if(waitlistCitySelect && !cityData[city].isLive) waitlistCitySelect.value=cityData[city].areaName;
+    
+    // Toggle Live vs Waitlist views
+    if(cityData[city].isLive) {
+        document.getElementById('activeBookingFlow').style.display='flex';
+        document.getElementById('waitlistFlow').style.display='none';
+    } else {
+        document.getElementById('activeBookingFlow').style.display='none';
+        document.getElementById('waitlistFlow').style.display='flex';
+    }
+    
+    updateBadgeText();
+    localStorage.setItem('spur_active_city',city);
+}
+
+function updateBadgeText(){
+    const lang=localStorage.getItem('spur_lang')||'en';
+    const liveDot=document.getElementById('liveDotIndicator');
+    const badgeText=document.getElementById('liveBadgeText');
+    const hoursNote=document.getElementById('hoursNote');
+    
+    if(cityData[currentCity].isLive){
+        if(isPTHours(cityData[currentCity].tz)){
+            liveDot.className='live-dot';
+            badgeText.innerText=cityData[currentCity][lang==='fr'?'frBadge':'enBadge'];
+        }else{
+            liveDot.className='live-dot offline';
+            badgeText.innerText=cityData[currentCity][lang==='fr'?'frOffline':'enOffline'];
+        }
+        if(hoursNote){
+            hoursNote.style.display='block';
+            hoursNote.innerHTML = lang==='fr' ? "Heures de conciergerie : 9h00 – 20h00 (HP)" : "Active Concierge Hours: 9:00 AM – 8:00 PM (PT)";
+        }
+    }else{
+        liveDot.className='live-dot offline';
+        badgeText.innerText=cityData[currentCity][lang==='fr'?'frBadge':'enBadge'];
+        if(hoursNote) hoursNote.style.display='none';
+    }
+}
+
+function switchLanguage(lang){
+    document.getElementById('btn-en').classList.toggle('active',lang==='en');
+    document.getElementById('btn-fr').classList.toggle('active',lang==='fr');
+    document.querySelectorAll('[data-en]').forEach(el=>{
+        if(el.hasAttribute('data-fr')){
+            el.innerHTML=lang==='fr'?el.getAttribute('data-fr'):el.getAttribute('data-en');
+        }
+    });
+    document.querySelectorAll('[data-en-placeholder]').forEach(el=>{
+        if(lang==='fr'&&el.hasAttribute('data-fr-placeholder')){
+            el.placeholder=el.getAttribute('data-fr-placeholder');
+        }else if(lang==='en'&&el.hasAttribute('data-en-placeholder')){
+            el.placeholder=el.getAttribute('data-en-placeholder');
+        }
+    });
+    const savedName=localStorage.getItem('spur_user_name');
+    if(savedName){
+        const sub=document.getElementById('dynamicHeroSubtitle');
+        if(sub)sub.textContent=lang==='fr'?"On s'occupe de vous.":"We don't look at menus. We look at you.";
+        document.querySelectorAll('.dynamic-header').forEach(header=>{
+            if(header.textContent.includes('Welcome back')||header.textContent.includes('Bon retour')){
+                header.textContent=lang==='fr'?"Bon retour, "+savedName.split(' ')[0]:"Welcome back, "+savedName.split(' ')[0];
+            }
+        });
+    }
+    localStorage.setItem('spur_lang',lang);
+    updateBadgeText();
+}
 
 let currentInterceptType='now';
-function openIntercept(type){const lang=localStorage.getItem('spur_lang')||'en';
-// WAITLIST BLOCKER FOR SPURNOW
-if(currentCity==='yul'||currentCity==='yyz'){alert(lang==='fr'?"Cette ville est actuellement sur liste d'attente. Veuillez rejoindre la liste d'accès Fondateur.":"This city is currently waitlisted. Please join the Founding Spurtan access list.");const nodeSelect=document.getElementById('spurtanNodeSelect');if(nodeSelect)nodeSelect.value=currentCity==='yul'?"Le Plateau, Montreal":"Financial District, Toronto";safeOpenModal('spurtanModal');return;}
-// AUTO-SWITCH TO 'LATER' IF AFTER HOURS
-if(type==='now'&&currentCity==='yvr'&&!isPTHours()){if(document.getElementById('laterModal')){alert(lang==='fr'?"Le concierge est actuellement hors ligne. Redirection pour planifier votre visite pour demain.":"The concierge is currently offline. Redirecting to schedule your visit for tomorrow.");type='later';}else{alert(lang==='fr'?"Le concierge est actuellement hors ligne. Veuillez revenir demain pour réserver votre place.":"The concierge is currently offline. Please check back tomorrow to secure a chair.");return;}}
-try{currentInterceptType=type;const savedSpecialist=localStorage.getItem('last_specialist');const savedName=localStorage.getItem('spur_user_name');if(savedName&&savedSpecialist&&savedSpecialist!=='Priority Match'&&savedSpecialist!=='undefined'){document.getElementById('recognizedSpecialistText').textContent=lang==='fr'?`Demander ${savedSpecialist} à nouveau ?`:`Request ${savedSpecialist} again?`;document.getElementById('interceptModal').style.display='flex';}else{safeOpenModal(type==='now'?'verifyModal':'laterModal');}}catch(err){safeOpenModal(type==='now'?'verifyModal':'laterModal');}}
+function openIntercept(type){
+    const lang=localStorage.getItem('spur_lang')||'en';
+    // WAITLIST BLOCKER
+    if(!cityData[currentCity].isLive){
+        safeOpenModal('waitlistModal');
+        return;
+    }
+    // AUTO-SWITCH TO 'LATER' IF AFTER HOURS
+    if(type==='now'&&currentCity==='yvr'&&!isPTHours(cityData[currentCity].tz)){
+        if(document.getElementById('laterModal')){
+            alert(lang==='fr'?"Le concierge est actuellement hors ligne. Redirection pour planifier votre visite pour demain.":"The concierge is currently offline. Redirecting to schedule your visit for tomorrow.");
+            type='later';
+        }else{
+            alert(lang==='fr'?"Le concierge est actuellement hors ligne. Veuillez revenir demain pour réserver votre place.":"The concierge is currently offline. Please check back tomorrow to secure a chair.");
+            return;
+        }
+    }
+    try{
+        currentInterceptType=type;
+        const savedSpecialist=localStorage.getItem('last_specialist');
+        const savedName=localStorage.getItem('spur_user_name');
+        if(savedName&&savedSpecialist&&savedSpecialist!=='Priority Match'&&savedSpecialist!=='undefined'){
+            document.getElementById('recognizedSpecialistText').textContent=lang==='fr'?`Demander ${savedSpecialist} à nouveau ?`:`Request ${savedSpecialist} again?`;
+            document.getElementById('interceptModal').style.display='flex';
+        }else{
+            safeOpenModal(type==='now'?'verifyModal':'laterModal');
+        }
+    }catch(err){safeOpenModal(type==='now'?'verifyModal':'laterModal');}
+}
 function confirmPreviousSpecialist(){const savedSpecialist=localStorage.getItem('last_specialist')||'Priority Match';document.querySelectorAll('.specialistHiddenField').forEach(el=>el.value=savedSpecialist);document.getElementById('interceptModal').style.display='none';safeOpenModal(currentInterceptType==='now'?'verifyModal':'laterModal');}
 function skipIntercept(){document.querySelectorAll('.specialistHiddenField').forEach(el=>el.value='Priority Match');document.getElementById('interceptModal').style.display='none';safeOpenModal(currentInterceptType==='now'?'verifyModal':'laterModal');}
 
-function safeOpenModal(id){try{const modal=document.getElementById(id);if(!modal)return;if(id==='verifyModal'||id==='laterModal'){const savedName=localStorage.getItem('spur_user_name');const savedPhone=localStorage.getItem('spur_user_phone');const contactFields=modal.querySelector('.contact-fields');const resetBtn=id==='verifyModal'?document.getElementById('resetUserBtn'):document.getElementById('resetUserBtnLater');const desc=modal.querySelector('.dynamic-desc');const submitBtn=modal.querySelector('button[type="submit"]');const lang=localStorage.getItem('spur_lang')||'en';if(savedName&&savedPhone){if(contactFields){contactFields.style.display='none';contactFields.querySelectorAll('input').forEach(i=>i.required=false);}if(resetBtn)resetBtn.style.display='block';const header=modal.querySelector('.dynamic-header');if(header)header.textContent=lang==='fr'?"Bon retour, "+savedName.split(' ')[0]:"Welcome back, "+savedName.split(' ')[0];if(desc)desc.textContent=lang==='fr'?"Profil sécurisé. Confirmez pour coordonner votre match.":"Profile secured. Confirm to coordinate your match.";if(submitBtn){if(id==='verifyModal')submitBtn.textContent=lang==='fr'?"CONFIRMER LA DEMANDE":"CONFIRM REQUEST";else submitBtn.textContent=lang==='fr'?"CONFIRMER LA VISITE PLANIFIÉE":"CONFIRM SCHEDULED COMMITMENT";}}else{if(contactFields){contactFields.style.display='block';contactFields.querySelectorAll('input').forEach(i=>i.required=true);}if(resetBtn)resetBtn.style.display='none';const header=modal.querySelector('.dynamic-header');if(header)header.textContent=id==='verifyModal'?(lang==='fr'?"Préparez-vous Maintenant":"Get Ready Now"):(lang==='fr'?"Planifier à L'avance":"Plan Ahead");if(desc){if(id==='verifyModal')desc.textContent=lang==='fr'?"Entrez vos coordonnées. Nous coordonnerons votre match.":"Enter your details. We will coordinate your match.";else desc.textContent=lang==='fr'?"Engagez-vous pour une visite planifiée. Nous coordonnerons la disponibilité.":"Commit to a scheduled visit. We'll coordinate availability.";}if(submitBtn){if(id==='verifyModal')submitBtn.textContent=lang==='fr'?"ENVOYER LA DEMANDE":"SEND REQUEST";else submitBtn.textContent=lang==='fr'?"DEMANDER UNE VISITE PLANIFIÉE":"REQUEST SCHEDULED COMMITMENT";}}}modal.style.display='flex';}catch(e){document.getElementById(id).style.display='flex';}}
+function safeOpenModal(id){
+    try{
+        const modal=document.getElementById(id);
+        if(!modal)return;
+        if(id==='verifyModal'||id==='laterModal'){
+            const savedName=localStorage.getItem('spur_user_name');
+            const savedPhone=localStorage.getItem('spur_user_phone');
+            const contactFields=modal.querySelector('.contact-fields');
+            const resetBtn=id==='verifyModal'?document.getElementById('resetUserBtn'):document.getElementById('resetUserBtnLater');
+            const desc=modal.querySelector('.dynamic-desc');
+            const submitBtn=modal.querySelector('button[type="submit"]');
+            const lang=localStorage.getItem('spur_lang')||'en';
+            if(savedName&&savedPhone){
+                if(contactFields){contactFields.style.display='none';contactFields.querySelectorAll('input').forEach(i=>i.required=false);}
+                if(resetBtn)resetBtn.style.display='block';
+                const header=modal.querySelector('.dynamic-header');
+                if(header)header.textContent=lang==='fr'?"Bon retour, "+savedName.split(' ')[0]:"Welcome back, "+savedName.split(' ')[0];
+                if(desc)desc.textContent=lang==='fr'?"Profil sécurisé. Confirmez pour coordonner votre match.":"Profile secured. Confirm to coordinate your match.";
+                if(submitBtn){
+                    if(id==='verifyModal')submitBtn.textContent=lang==='fr'?"CONFIRMER LA DEMANDE":"CONFIRM REQUEST";
+                    else submitBtn.textContent=lang==='fr'?"CONFIRMER LA VISITE PLANIFIÉE":"CONFIRM SCHEDULED COMMITMENT";
+                }
+            }else{
+                if(contactFields){contactFields.style.display='block';contactFields.querySelectorAll('input').forEach(i=>i.required=true);}
+                if(resetBtn)resetBtn.style.display='none';
+                const header=modal.querySelector('.dynamic-header');
+                if(header)header.textContent=id==='verifyModal'?(lang==='fr'?"Préparez-vous Maintenant":"Get Ready Now"):(lang==='fr'?"Planifier à l'avance":"Plan Ahead");
+                if(desc){
+                    if(id==='verifyModal')desc.textContent=lang==='fr'?"Entrez vos coordonnées. Nous coordonnerons votre match.":"Enter your details. We will coordinate your match.";
+                    else desc.textContent=lang==='fr'?"Engagez-vous pour une visite planifiée. Nous coordonnerons la disponibilité.":"Commit to a scheduled visit. We'll coordinate availability.";
+                }
+                if(submitBtn){
+                    if(id==='verifyModal')submitBtn.textContent=lang==='fr'?"ENVOYER LA DEMANDE":"SEND REQUEST";
+                    else submitBtn.textContent=lang==='fr'?"DEMANDER UNE VISITE PLANIFIÉE":"REQUEST SCHEDULED COMMITMENT";
+                }
+            }
+        }
+        modal.style.display='flex';
+    }catch(e){document.getElementById(id).style.display='flex';}
+}
 
 function resetUser(){localStorage.removeItem('spur_user_name');localStorage.removeItem('spur_user_phone');localStorage.removeItem('last_specialist');localStorage.removeItem('spur_applied_code');localStorage.removeItem('spur_history');const priceDisplay=document.getElementById('displayPrice');if(priceDisplay)priceDisplay.textContent="$49.99 CAD";if(document.getElementById('laterModal')&&document.getElementById('laterModal').style.display==='flex'){safeOpenModal('laterModal');}else{safeOpenModal('verifyModal');}}
 function closeModals(){document.querySelectorAll('.modal-overlay').forEach(el=>el.style.display='none');}
 
-async function handleSpurtanRegister(event){event.preventDefault();const lang=localStorage.getItem('spur_lang')||'en';if(localStorage.getItem('spur_discount_used')==='true'){alert(lang==='fr'?"Le tarif fondateur est valable uniquement pour votre première visite.":"The Founding Spurtan rate is valid for your first visit only.");return;}const form=event.target;const name=form.querySelector('input[name="client_name"]').value;const phone=form.querySelector('input[name="client_phone"]').value;const submitBtn=document.getElementById('spurtanSubmitBtn');const ogText=submitBtn.textContent;submitBtn.disabled=true;submitBtn.textContent=lang==='fr'?"TRAITEMENT...":"PROCESSING...";if(supabaseClient){try{const{count}=await supabaseClient.from('requests').select('*',{count:'exact',head:true}).eq('phone',phone);if(count&&count>0){alert(lang==='fr'?"Ce numéro a déjà un historique. Le tarif est valable uniquement pour la 1ère visite.":"This number has past visits. The Founding Spurtan rate is for first-time visits only.");submitBtn.disabled=false;submitBtn.textContent=ogText;return;}}catch(e){}}localStorage.setItem('spur_user_name',name);localStorage.setItem('spur_user_phone',phone);localStorage.setItem('last_specialist','Priority Match');localStorage.setItem('spur_applied_code','FOUNDER');await syncClientToSupabase(name,phone,'Priority Match');submitBtn.disabled=false;submitBtn.textContent=ogText;alert(lang==='fr'?"✓ Accès Spurtan Fondateur confirmé ! Votre tarif de 39,99 $ est actif pour votre première visite.":"✓ Founding Spurtan Access confirmed! Your $39.99 rate is active for your first visit.");document.getElementById('displayPrice').textContent="$39.99 CAD";const sub=document.getElementById('dynamicHeroSubtitle');if(sub){sub.textContent=lang==='fr'?"Bon retour, "+name.split(' ')[0]+".":"Welcome back, "+name.split(' ')[0]+".";}await updateLiveCounter();closeModals();form.reset();}
+async function handleSpurtanRegister(event){
+    event.preventDefault();
+    const lang=localStorage.getItem('spur_lang')||'en';
+    if(localStorage.getItem('spur_discount_used')==='true'){
+        alert(lang==='fr'?"Le tarif fondateur est valable uniquement pour votre première visite.":"The Founding Spurtan rate is valid for your first visit only.");
+        return;
+    }
+    const form=event.target;
+    const name=form.querySelector('input[name="client_name"]').value;
+    const phone=form.querySelector('input[name="client_phone"]').value;
+    const submitBtn=document.getElementById('spurtanSubmitBtn');
+    const ogText=submitBtn.textContent;
+    submitBtn.disabled=true;
+    submitBtn.textContent=lang==='fr'?"TRAITEMENT...":"PROCESSING...";
+    if(supabaseClient){
+        try{
+            const{count}=await supabaseClient.from('requests').select('*',{count:'exact',head:true}).eq('phone',phone);
+            if(count&&count>0){
+                alert(lang==='fr'?"Ce numéro a déjà un historique. Le tarif est valable uniquement pour la 1ère visite.":"This number has past visits. The Founding Spurtan rate is for first-time visits only.");
+                submitBtn.disabled=false;
+                submitBtn.textContent=ogText;
+                return;
+            }
+        }catch(e){}
+    }
+    localStorage.setItem('spur_user_name',name);
+    localStorage.setItem('spur_user_phone',phone);
+    localStorage.setItem('last_specialist','Priority Match');
+    localStorage.setItem('spur_applied_code','FOUNDER');
+    await syncClientToSupabase(name,phone,'Priority Match');
+    submitBtn.disabled=false;
+    submitBtn.textContent=ogText;
+    alert(lang==='fr'?"✓ Accès Spurtan Fondateur confirmé ! Votre tarif de 39,99 $ est actif pour votre première visite.":"✓ Founding Spurtan Access confirmed! Your $39.99 rate is active for your first visit.");
+    document.getElementById('displayPrice').textContent="$39.99 CAD";
+    const sub=document.getElementById('dynamicHeroSubtitle');
+    if(sub){sub.textContent=lang==='fr'?"Bon retour, "+name.split(' ')[0]+".":"Welcome back, "+name.split(' ')[0]+".";}
+    await updateLiveCounter();
+    closeModals();
+    form.reset();
+}
 
-async function handleCodeSubmit(event){event.preventDefault();const codeVal=document.getElementById('spurInput').value.trim().toUpperCase();const lang=localStorage.getItem('spur_lang')||'en';let isMathValid=false;if(codeVal==='SPURTAN'){isMathValid=true;}else if(codeVal.startsWith('SPUR')&&codeVal.length===8){const num=parseInt(codeVal.substring(4),10);if(!isNaN(num)&&num>0&&num<=891&&num%9===0){isMathValid=true;}}if(!isMathValid){alert(lang==='fr'?"Veuillez entrer un code valide.":"Please enter a valid code.");return;}if(localStorage.getItem('spur_discount_used')==='true'){alert(lang==='fr'?"Le tarif fondateur est valable uniquement pour votre première visite.":"The Founding Spurtan rate is valid for your first visit only.");return;}if(supabaseClient){try{const{data}=await supabaseClient.from('clients').select('phone').eq('spurtan_code',codeVal).single();if(data){const currentPhone=localStorage.getItem('spur_user_phone');if(!currentPhone||data.phone!==currentPhone){alert(lang==='fr'?"Ce code a déjà été utilisé.":"This code has already been claimed.");return;}}const currentPhone=localStorage.getItem('spur_user_phone');if(currentPhone){const{count}=await supabaseClient.from('requests').select('*',{count:'exact',head:true}).eq('phone',currentPhone);if(count&&count>0){alert(lang==='fr'?"Le tarif fondateur est valable uniquement pour votre première visite.":"The Founding Spurtan rate is valid for your first visit only.");return;}}}catch(e){}}localStorage.setItem('spur_applied_code',codeVal);document.getElementById('displayPrice').textContent="$39.99 CAD";alert(lang==='fr'?"✓ Remise appliquée !":"✓ Code applied! (-$10.00)");closeModals();event.target.reset();}
+async function handleWaitlistSubmit(event){
+    event.preventDefault();
+    const form=event.target;
+    const lang=localStorage.getItem('spur_lang')||'en';
+    const submitBtn=form.querySelector('button[type="submit"]');
+    const ogText=submitBtn.textContent;
+    submitBtn.disabled=true;
+    submitBtn.textContent=lang==='fr'?"TRAITEMENT...":"PROCESSING...";
+    try{ await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}}); }catch(e){}
+    submitBtn.disabled=false;
+    submitBtn.textContent=ogText;
+    alert(lang==='fr'?"✓ Inscription sur la liste d'attente confirmée !":"✓ Waitlist registration confirmed!");
+    closeModals();
+    form.reset();
+}
+
+async function handleCodeSubmit(event){
+    event.preventDefault();
+    const codeVal=document.getElementById('spurInput').value.trim().toUpperCase();
+    const lang=localStorage.getItem('spur_lang')||'en';
+    let isMathValid=false;
+    if(codeVal==='SPURTAN'){isMathValid=true;}
+    else if(codeVal.startsWith('SPUR')&&codeVal.length===8){
+        const num=parseInt(codeVal.substring(4),10);
+        if(!isNaN(num)&&num>0&&num<=891&&num%9===0){isMathValid=true;}
+    }
+    if(!isMathValid){
+        alert(lang==='fr'?"Veuillez entrer un code valide.":"Please enter a valid code.");
+        return;
+    }
+    if(localStorage.getItem('spur_discount_used')==='true'){
+        alert(lang==='fr'?"Le tarif fondateur est valable uniquement pour votre première visite.":"The Founding Spurtan rate is valid for your first visit only.");
+        return;
+    }
+    if(supabaseClient){
+        try{
+            const{data}=await supabaseClient.from('clients').select('phone').eq('spurtan_code',codeVal).single();
+            if(data){
+                const currentPhone=localStorage.getItem('spur_user_phone');
+                if(!currentPhone||data.phone!==currentPhone){
+                    alert(lang==='fr'?"Ce code a déjà été utilisé.":"This code has already been claimed.");
+                    return;
+                }
+            }
+            const currentPhone=localStorage.getItem('spur_user_phone');
+            if(currentPhone){
+                const{count}=await supabaseClient.from('requests').select('*',{count:'exact',head:true}).eq('phone',currentPhone);
+                if(count&&count>0){
+                    alert(lang==='fr'?"Le tarif fondateur est valable uniquement pour votre première visite.":"The Founding Spurtan rate is valid for your first visit only.");
+                    return;
+                }
+            }
+        }catch(e){}
+    }
+    localStorage.setItem('spur_applied_code',codeVal);
+    document.getElementById('displayPrice').textContent="$39.99 CAD";
+    alert(lang==='fr'?"✓ Remise appliquée !":"✓ Code applied! (-$10.00)");
+    closeModals();
+    event.target.reset();
+}
 
 async function handleSubmit(event,type){
     event.preventDefault();
     const form=event.target;
     const lang=localStorage.getItem('spur_lang')||'en';
     
-    // STRICT 30-MINUTE BROWSER LOCK
     const lastSub=localStorage.getItem('spur_last_submit');
     if(lastSub&&(Date.now()-parseInt(lastSub))<30*60*1000){
         alert(lang==='fr'?"Demande déjà reçue. Veuillez patienter 30 minutes avant de réserver à nouveau.":"Request already received. Please wait 30 minutes before booking again.");
@@ -200,7 +603,6 @@ async function handleSubmit(event,type){
     const phoneInput=form.querySelector('input[name="client_phone"]');
     const occasionSelect=form.querySelector('select[name="client_occasion"]');
     
-    // EXTRACT DATE AND TIME FOR READY LATER
     const dateInput = form.querySelector('input[name="requested_date"]');
     const timeInput = form.querySelector('select[name="requested_time"]');
     const reqDate = dateInput ? dateInput.value : '';
@@ -209,12 +611,15 @@ async function handleSubmit(event,type){
     if(nameInput&&nameInput.value.trim()){name=nameInput.value.trim();localStorage.setItem('spur_user_name',name);}
     if(phoneInput&&phoneInput.value.trim().length>=10){phone=phoneInput.value.trim();localStorage.setItem('spur_user_phone',phone);}
     if(!name)name='Valued Client';
-    if(!phone){alert(lang==='fr'?'Veuillez entrer un numéro valide.':'Please enter a valid mobile number.');return;}
+    if(!phone){
+        alert(lang==='fr'?'Veuillez entrer un numéro de téléphone valide.':'Please enter a valid mobile number.');
+        return;
+    }
     
     localStorage.setItem('spur_last_submit',Date.now().toString());
     
     const submitBtn=form.querySelector('button[type="submit"]');
-    if(submitBtn){submitBtn.disabled=true;submitBtn.style.opacity='0.7';submitBtn.textContent=lang==='fr'?"COORDINATION...":"COORDINATING MATCH...";}
+    if(submitBtn){submitBtn.disabled=true;submitBtn.style.opacity='0.7';submitBtn.textContent=lang==='fr'?"COORDINATION EN COURS...":"COORDINATING MATCH...";}
     
     const city=form.querySelector('.formCityField').value;
     const specialist=form.querySelector('input[name="requested_specialist"]')?.value||'Priority Match';
@@ -256,13 +661,9 @@ async function handleSubmit(event,type){
     
     try{if(supabaseClient)await supabaseClient.from('requests').insert({phone,city,type,specialist,occasion,service:serviceRequested,price:finalPrice});}catch(err){}
     
-    localStorage.setItem('spur_discount_used','true');
-    localStorage.removeItem('spur_applied_code');
-    
-    // BILINGUAL WHATSAPP MESSAGE BUILDER (WITH DATE/TIME)
     let waMessage = "";
     if (lang === 'fr') {
-        const typeText = type === 'now' ? 'PRÊT MAINTENANT' : 'VISITE PLANIFIÉE';
+        const typeText = type === 'now' ? 'READY NOW' : 'VISITE PLANIFIÉE';
         waMessage = `Bonjour SPUR — Je souhaite demander une visite.\n\nType: ${typeText}\n`;
         if (type === 'later' && reqDate && reqTime) { waMessage += `Date: ${reqDate}\nHeure: ${reqTime}\n`; }
         waMessage += `Ville: ${city}\nNom: ${name}\nMobile: ${phone}\nOccasion: ${occasion}\n\nService: ${serviceRequested}\nTotal: ${finalPrice.toFixed(2)} $\nSpécialiste: ${specialist}\n\nVeuillez coordonner la disponibilité vérifiée.`;
@@ -276,7 +677,6 @@ async function handleSubmit(event,type){
     const encodedWaUrl = `https://wa.me/${SPUR_WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`;
     if(document.getElementById('whatsappAutoBtn')) document.getElementById('whatsappAutoBtn').href = encodedWaUrl;
     
-    // Update the "Change of Plans" link language dynamically
     const cancelLinks = document.querySelectorAll('a[href*="modify%20my%20recent"]');
     cancelLinks.forEach(link => {
         if (lang === 'fr') {
@@ -290,7 +690,7 @@ async function handleSubmit(event,type){
     
     const phoneLineTag=document.getElementById('displayPhoneLine');
     if(phoneLineTag) {
-        if(isPTHours()){
+        if(isPTHours(cityData[currentCity].tz)){
             phoneLineTag.textContent=lang==='fr'?'LIGNE CONCIERGE : ACTIVE':'CONCIERGE LINE: ACTIVE';
             phoneLineTag.style.color='var(--gold)';
         }else{
@@ -308,7 +708,36 @@ async function handleSubmit(event,type){
     },1200);
 }
 
-window.addEventListener('DOMContentLoaded',async()=>{try{const today=new Date().toISOString().split('T')[0];const dateInput=document.getElementById('laterDateInput');if(dateInput)dateInput.min=today;document.querySelectorAll('input[type="tel"]').forEach(input=>{input.addEventListener('input',function(){this.value=this.value.replace(/\D/g,'').slice(0,10);});});setCity(localStorage.getItem('spur_active_city')||'yvr');switchLanguage(localStorage.getItem('spur_lang')||'en');await checkReturningUserRealtime();await updateLiveCounter();const lang=localStorage.getItem('spur_lang')||'en';const savedName=localStorage.getItem('spur_user_name');const sub=document.getElementById('dynamicHeroSubtitle');if(savedName){if(sub)sub.textContent=lang==='fr'?"Bon retour, "+savedName.split(' ')[0]+".":"Welcome back, "+savedName.split(' ')[0]+".";}const hasCode=localStorage.getItem('spur_applied_code')!==null;const usedCode=localStorage.getItem('spur_discount_used')==='true';if(hasCode&&!usedCode){document.getElementById('displayPrice').textContent="$39.99 CAD";}setInterval(updateBadgeText,60000);}catch(e){}});
+window.addEventListener('DOMContentLoaded',async()=>{
+    try{
+        const today=new Date().toISOString().split('T')[0];
+        const dateInput=document.getElementById('laterDateInput');
+        if(dateInput)dateInput.min=today;
+        document.querySelectorAll('input[type="tel"]').forEach(input=>{input.addEventListener('input',function(){this.value=this.value.replace(/\D/g,'').slice(0,10);});});
+        
+        // Initialize default view
+        setCity(localStorage.getItem('spur_active_city')||'yvr');
+        switchLanguage(localStorage.getItem('spur_lang')||'en');
+        
+        await checkReturningUserRealtime();
+        await updateLiveCounter();
+        
+        const lang=localStorage.getItem('spur_lang')||'en';
+        const savedName=localStorage.getItem('spur_user_name');
+        const sub=document.getElementById('dynamicHeroSubtitle');
+        if(savedName){
+            if(sub)sub.textContent=lang==='fr'?"On s'occupe de vous.":"Welcome back, "+savedName.split(' ')[0]+".";
+        }
+        
+        const hasCode=localStorage.getItem('spur_applied_code')!==null;
+        const usedCode=localStorage.getItem('spur_discount_used')==='true';
+        if(hasCode&&!usedCode){
+            document.getElementById('displayPrice').textContent="$39.99 CAD";
+        }
+        
+        setInterval(updateBadgeText,60000);
+    }catch(e){}
+});
 </script>
 </body>
 </html>
